@@ -7,6 +7,10 @@ body{
   margin: auto;
 }
 
+#clock{ 
+  font-size: 30px;
+}
+
 .card{
   width: 70px;
   height: 100px;
