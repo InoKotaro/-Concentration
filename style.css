@@ -1,19 +1,24 @@
 body{
-  width: 100%;
+  width: auto;
+  background-image: url(sea.jpeg);
+  background-size: cover;
+  user-select: none;
 }
 
 #field{
-  width: 600px;
+  width: 900px;
   margin: auto;
 }
 
 #clock{ 
   font-size: 30px;
+  color: whitesmoke;
 }
 
 .card{
   width: 70px;
   height: 100px;
+  background-color: whitesmoke;
   line-height: 100px;
   text-align: center;
   border:  2px solid gray;
