@@ -78,3 +78,13 @@ function click(c){ //上で定義したクリック時の処理
     timer = null;
    }
 }
+
+//「#container」に「#」不足で数時間悩む。
+//特にjQueryはid,classで識別する為、書き忘れに要警戒。これ教訓
+$(document).ready(function() {
+	$('#container').ripples({ //波紋をつける要素を指定
+		resolution: 300, //波紋が広がる速さ
+		dropRadius: 20, //波紋の大きさ
+		perturbance: 0.01 //波紋の揺れの量
+	});
+});

@@ -1,8 +1,16 @@
+* { 
+  margin: 0;
+  padding: 0; 
+}
+
 body{
-  width: auto;
-  background-image: url(sea.jpeg);
-  background-size: cover;
-  user-select: none;
+  user-select: none; /*文字選択不可化*/
+}
+
+#container{
+  background: url("sea.jpeg") center center/cover no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
 #field{
@@ -11,6 +19,7 @@ body{
 }
 
 #clock{ 
+  padding: 10px 0 7px 30px;
   font-size: 30px;
   color: whitesmoke;
 }
