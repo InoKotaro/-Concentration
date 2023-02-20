@@ -5,8 +5,48 @@ function rand(min,max){
 
 //カード作成
 let cards = [
-  "鯛", "鰍", "鮪", "鮭", "鰈", "鰹", "鰻", "鯲", "鰕", "鰯", "鰣", "鯰", "鱏", "鯣", "鮴", "鰺", "鯏", "鮑", "鯖", "魚",
-  "鯛", "鰍", "鮪", "鮭", "鰈", "鰹", "鰻", "鯲", "鰕", "鰯", "鰣", "鯰", "鱏", "鯣", "鮴", "鰺", "鯏", "鮑", "鯖", "魚",
+"鯛", "鰍", "鮪", "鮭", "鰈", "鰹", "鰻", "鯲", "鰕", "鰯", "鰣", "鯰", "鱏", "鯣", "鮴", "鰺", "鯏", "鮑", "鯖", "魚",
+"鯛", "鰍", "鮪", "鮭", "鰈", "鰹", "鰻", "鯲", "鰕", "鰯", "鰣", "鯰", "鱏", "鯣", "鮴", "鰺", "鯏", "鮑", "鯖", "魚",
+  // "<ruby><rb>鯛</rb><rt>たい</rt></ruby>",  
+  // "<ruby><rb>鯛</rb><rt>たい</rt></ruby>",   
+  // "<ruby><rb>鮪</rb><rt>まぐろ</rt></ruby>",
+  // "<ruby><rb>鮪</rb><rt>まぐろ</rt></ruby>",
+  // "<ruby><rb>鰍</rb><rt>かじか</rt></ruby>",
+  // "<ruby><rb>鰍</rb><rt>かじか</rt></ruby>",
+  // "<ruby><rb>鮭</rb><rt>さけ</rt></ruby>",
+  // "<ruby><rb>鮭</rb><rt>さけ</rt></ruby>",
+  // "<ruby><rb>鰈</rb><rt>かれい</rt></ruby>",
+  // "<ruby><rb>鰈</rb><rt>かれい</rt></ruby>",
+  // "<ruby><rb>鰹</rb><rt>かつお</rt></ruby>",
+  // "<ruby><rb>鰹</rb><rt>かつお</rt></ruby>",
+  // "<ruby><rb>鰻</rb><rt>うなぎ</rt></ruby>",
+  // "<ruby><rb>鰻</rb><rt>うなぎ</rt></ruby>",
+  // "<ruby><rb>鯲</rb><rt>どじょう</rt></ruby>",
+  // "<ruby><rb>鯲</rb><rt>どじょう</rt></ruby>",
+  // "<ruby><rb>鰕</rb><rt>えび</rt></ruby>",
+  // "<ruby><rb>鰕</rb><rt>えび</rt></ruby>",
+  // "<ruby><rb>鰯</rb><rt>いわし</rt></ruby>",
+  // "<ruby><rb>鰯</rb><rt>いわし</rt></ruby>",
+  // "<ruby><rb>鰣</rb><rt>はす</rt></ruby>",
+  // "<ruby><rb>鰣</rb><rt>はす</rt></ruby>",
+  // "<ruby><rb>鯰</rb><rt>なまず</rt></ruby>",
+  // "<ruby><rb>鯰</rb><rt>なまず</rt></ruby>",
+  // "<ruby><rb>鱏</rb><rt>えい</rt></ruby>",
+  // "<ruby><rb>鱏</rb><rt>えい</rt></ruby>",
+  // "<ruby><rb>鯣</rb><rt>するめ</rt></ruby>",
+  // "<ruby><rb>鯣</rb><rt>するめ</rt></ruby>",
+  // "<ruby><rb>鮴</rb><rt>めばる</rt></ruby>",
+  // "<ruby><rb>鮴</rb><rt>めばる</rt></ruby>",
+  // "<ruby><rb>鰺</rb><rt>あじ</rt></ruby>",
+  // "<ruby><rb>鰺</rb><rt>あじ</rt></ruby>",
+  // "<ruby><rb>鯏</rb><rt>あさり</rt></ruby>",
+  // "<ruby><rb>鯏</rb><rt>あさり</rt></ruby>",
+  // "<ruby><rb>鮑</rb><rt>あわび</rt></ruby>",
+  // "<ruby><rb>鮑</rb><rt>あわび</rt></ruby>",
+  // "<ruby><rb>鯖</rb><rt>さば</rt></ruby>",
+  // "<ruby><rb>鯖</rb><rt>さば</rt></ruby>",
+  // "<ruby><rb>魚</rb><rt>さかな</rt></ruby>",
+  // "<ruby><rb>魚</rb><rt>さかな</rt></ruby>",
 ];
 
 //シャッフル
@@ -48,6 +88,7 @@ function click(c){ //上で定義したクリック時の処理
     clearTimeout(timer); //ジャッジ中に他のカードクリックされるとバグの原因なるので、timer強制終了(clearTimeout)
     judge(); //judge即実行
   }
+  
   let card = c.target;
   card.innerHTML = cards[card.index];
 

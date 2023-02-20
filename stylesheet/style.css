@@ -8,7 +8,8 @@ body{
 }
 
 #container{
-  background: url("sea.jpg") center center/cover no-repeat;
+  /* 画像が上の階層にある時の記述注意 */
+  background: url("../img/sea.jpg") center center/cover no-repeat;
   width: 100%;
   height: 100vh;
 }
