@@ -27,7 +27,7 @@ P.S. ゲーム関係なしに波紋で遊ぶのも結構楽しいのでおすす
 <br>
 
 ### 使用言語
-JavaScript
+・JavaScript
 
 ### 使用ライブラリ
 ・jQuery
